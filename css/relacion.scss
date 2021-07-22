@@ -1,0 +1,52 @@
+$MainColor: #000;
+$secondarycolor: #f2f2f2;
+$decorationcolor: #c79800;
+
+body {
+background-color: $secondarycolor;
+font-family: 'Roboto';
+color: $MainColor;
+width: 100%;
+
+    header {
+    background-color:$MainColor;
+    text-align: center;
+    z-index: 100;
+    .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    nav ul {
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+    
+    li {
+        margin: 20px;
+        a {
+        position:relative;
+        margin:15px;
+        font-size:25px;  
+        color: $secondarycolor;
+        text-decoration: none;
+        &:before { 
+            content:'';
+            background: $decorationcolor;
+            position:absolute;
+            bottom:-10px; 
+            height: 3px;
+            width:0;
+            transition: all 450ms;
+        }
+        
+        }
+        
+        
+    }
+
+
+    }
+    }
+
+}
+
